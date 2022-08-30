@@ -164,7 +164,7 @@ class PrivateRecipeApiTests(TestCase):
         }
 
         url = detail_url(recipe.id)
-        res = self.client.put(url, recipe)
+        res = self.client.put(url, payload)
 
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         recipe.refresh_from_db()
