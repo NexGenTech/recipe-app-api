@@ -43,7 +43,7 @@ class UserAdmin(BaseUserAdmin):
                 'is_staff',
                 'is_superuser',
 
-            )
+            ),
         }),
     )
 
